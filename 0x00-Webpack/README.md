@@ -75,9 +75,9 @@ Tasks:
 
 Repo:
 
-GitHub repository: `alx-react`
-Directory: `0x00-Webpack`
-File: `task_0`/`package.json`, `task_0`/`src`/`index.js`, `task_0`/`dist`/`index.html`
+- GitHub repository: `alx-react`
+- Directory: `0x00-Webpack`
+- File: `task_0`/`package.json`, `task_0`/`src`/`index.js`, `task_0`/`dist`/`index.html`
 
 ---
 
@@ -102,9 +102,9 @@ Tasks:
 
 Repo:
 
-GitHub repository: `alx-react`
-Directory: `0x00-Webpack`
-File: `task_1`/`js`/`dashboard_main.js`, `task_1`/`package.json`, `task_1`/`webpack.config.js`, `task_1`/`public`/`index.html`
+- GitHub repository: `alx-react`
+- Directory: `0x00-Webpack`
+- File: `task_1`/`js`/`dashboard_main.js`, `task_1`/`package.json`, `task_1`/`webpack.config.js`, `task_1`/`public`/`index.html`
 
 ---
 
@@ -132,8 +132,48 @@ Tasks:
 
 Repo:
 
-GitHub repository: `alx-react`
-Directory: `0x00-Webpack`
-File: `task_2`/`package.json`, `task_2`/`css`/`main.css`, `task_2`/`webpack.config.js`, `task_2`/`js`/`dashboard_main.js`, `task_2`/`public`/`index.html`
+- GitHub repository: `alx-react`
+- Directory: `0x00-Webpack`
+- File: `task_2`/`package.json`, `task_2`/`css`/`main.css`, `task_2`/`webpack.config.js`, `task_2`/`js`/`dashboard_main.js`, `task_2`/`public`/`index.html`
 
 ---
+
+## Task 3: Dev servers, modules, and tree shaking (100% Completed)
+
+**Objective:** Set up a development server, divide code into modules, and optimize bundles size.
+
+Tasks:
+
+3. Dev servers, modules, and tree shaking
+   - **Status:** 100% Completed
+   - **Score:** 100%
+   - **Checks completed:** 100%
+   - **Details:**
+     - Set up a development server in the folder named `task_3`.
+     - Reuse code from `task_2`.
+     - Modify the Webpack config to set up a development server running on port 8564.
+     - Set the mode to development in the Webpack config.
+     - Add a script in `package.json` to start the server and open the browser with `npm run start-dev`.
+     - Divide the main bundle into three modules:
+       - `header`: Contains `header.css` and `header.js` files. Import jQuery, add logo and H1 title to `header.js` with content "Holberton Dashboard", and add a console.log printing "Init header". Add necessary styles to `header.css`.
+       - `body`: Contains `body.css` and `body.js` files. Import jQuery, Lodash, and add the body code (button, counter) in `body.js`. Add necessary styles to `body.css`.
+       - `footer`: Contains `footer.css` and `footer.js` files. Import jQuery and append a paragraph with the copyright text "Copyright - Holberton School". Add necessary styles to `footer.css`.
+     - Modify the Webpack configuration to support three different entry points (`header`, `body`, `footer`). Each entry point should generate a filename with the format `name_of_the_file.bundle.js`.
+     - Do NOT have a `task_3/public/` directory pushed to your repository.
+     - Add a plugin to Webpack to automatically create an `index.html` HTML file.
+     - Improve development speed:
+       - Modify the Webpack config to support inline source mapping.
+       - Check that the `console.log` in `header.js` now takes you to your JavaScript file instead of the main bundle.
+       - Add a plugin to Webpack to clean your build folder on each build.
+     - Improve bundles size:
+       - Modify the Webpack configuration to split the modules into chunks.
+
+Repo:
+
+- GitHub repository: `alx-react`
+- Directory: `0x00-Webpack`
+- File: `task_3`/`modules`/`body`/`body.css`, `task_3`/`modules`/`body`/`body.js`, `task_3`/`modules`/`footer`/`footer.css`, `task_3`/`modules`/`footer`/`footer.js`, `task_3`/`modules`/`header`/`header.css`, `task_3`/`modules`/`header`/`header.js`, `task_3`/`package.json`, `task_3`/`webpack.config.js`
+
+---
+
+
