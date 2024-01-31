@@ -45,8 +45,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 Create a basic app named `dashboard` using `create-react-app` in your `task_0` directory.
 
 - Download and add the Holberton logo and favicon to the `src/` directory under `dashboard/`.
-  - ![Holberton Logo](images/175b85183ecedb529e14.jpg)
-  - ![Favicon](images/favicon.ico)
+![Holberton Logo](images/175b85183ecedb529e14.jpg)
+![Favicon](images/favicon.ico)
 
 - Remove the unused files: `service-worker`, `index.css`, `App.test.js`.
 
@@ -56,7 +56,7 @@ Create a basic app named `dashboard` using `create-react-app` in your `task_0` d
   - a footer div with a class named `App-footer` containing at least one paragraph with the text "Copyright 2020 - Holberton School".
 
 - Modify the `App.css` to make the project look like the provided screenshot.
-  - ![Favicon](images/dashborad.png)
+![Favicon](images/dashborad.png)
 
 **Requirements:**
 
@@ -173,6 +173,9 @@ In `task_2/dashboard/src/Notifications.css`:
 
 - When running, there should not be any lint error in the console.
 - Your app should look like the provided screenshot.
+
+![Favicon](images/dashboard2.png)
+
 
 **Repo:**
 
